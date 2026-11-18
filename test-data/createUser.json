@@ -1,0 +1,9 @@
+
+{
+    "requestBody": {
+        "name": "Surya",
+        "username": "surya123",
+        "email": "surya@gmail.com"
+    },
+    "expectedStatus": 201
+}
