@@ -10,7 +10,7 @@ export default defineConfig({
     reporter: 'html',
 
     use: {
-        baseURL: 'https://urban-bassoon-wrxv9q459xvh9wrw-3000.app.github.dev/',
+        baseURL: 'https://turbo-space-fortnight-g44vv97vq79q3x-3000.app.github.dev/',
 
         extraHTTPHeaders: {
             'Content-Type': 'application/json',
