@@ -2,20 +2,18 @@
 import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
+  testDir: './tests',
 
-    testDir: './tests',
+  fullyParallel: true,
 
-    fullyParallel: true,
+  reporter: 'html',
 
-    reporter: 'html',
+  use: {
+    baseURL: process.env.API_URL || 'http://localhost:3000',
 
-    use: {
-        baseURL: 'https://turbo-space-fortnight-g44vv97vq79q3x-3000.app.github.dev/',
-
-        extraHTTPHeaders: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-        }
+    extraHTTPHeaders: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
     }
-
+  }
 });
